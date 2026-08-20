@@ -1,75 +1,97 @@
 ````md
 <div align="center">
 
-<img src="./assets/banner-rage.png" width="100%" alt="VOID RAGE"/>
+<img src="./assets/banner-night.png" width="100%" alt="NIGHT RUNNER"/>
 
 <br><br>
 
-<img src="./assets/icon-rage.png" width="125" alt="xM4theus"/>
+<img src="./assets/icon-void.png" width="130" alt="xM4theus"/>
 &nbsp;&nbsp;&nbsp;
-<img src="./assets/icon-extra.jpg" width="125" alt="void"/>
+<img src="./assets/icon-extra.jpg" width="130" alt="ghost"/>
 
 # `xM4theus`
 
-### `// GHOST PROCESS DETECTED`
+### `MIDNIGHT // NO SIGNAL`
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&pause=900&color=E8A9C6&center=true&vCenter=true&width=700&lines=%5B+SYSTEM+CORRUPTED+%5D;%3E+ghost+process+detected...;%3E+breaking+reality+one+commit+at+a+time.;%3E+there+is+something+inside+the+machine.;%3E+DO+NOT+TERMINATE." />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&pause=1000&color=E9A8C7&center=true&vCenter=true&width=720&lines=%3E+03%3A47+AM+%2F%2F+still+awake.;%3E+driving+through+dead+signals.;%3E+somewhere+between+code+and+the+void.;%3E+no+destination+found.;%3E+keep+moving." />
 
 </div>
 
 ---
 
-## `// IDENTITY.EXE`
+## `// DRIVER`
 
 ```txt
-┌─[ xM4theus@VOID ]
-│
-├─ alias        :: xM4theus
-├─ state        :: ONLINE // UNSTABLE
-├─ environment  :: midnight void
-├─ objective    :: CREATE / BREAK / REBUILD
-├─ interests    :: shaders / game dev / low-level / weird code
-├─ aesthetic    :: black // purple // white // pastel pink
-│
-└─ process      :: still running...
+           ID : xM4theus
+       STATUS : ACTIVE
+         TIME : 03:47 AM
+     LOCATION : UNKNOWN
+       SIGNAL : WEAK
+        LIGHT : LOW
+         MOOD : MIDNIGHT
 ````
 
----
+```txt
+> searching for destination...
 
-<div align="center">
+ERROR:
+destination not found.
 
-### `▓▓▓ SYSTEM LOADOUT ▓▓▓`
+> continue anyway? [Y/n]
 
-<img src="https://skillicons.dev/icons?i=cpp,cs,lua,python,unity,git,github,vscode,visualstudio&theme=dark"/>
-
-</div>
-
----
-
-## `// ACTIVE_PROCESSES`
-
-```diff
-+ [01] shader experiments
-+ [02] game development
-+ [03] low-level curiosity
-+ [04] obscure projects
-
-! [05] breaking things that worked yesterday
-! [06] fixing things that should not exist
-! [07] questionable ideas after midnight
+Y
 ```
 
 ---
 
-## `// SYSTEM_ACTIVITY`
+## `// LOADOUT`
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=cpp,cs,lua,python,unity,vscode,visualstudio,git,github&theme=dark"/>
+
+</div>
+
+<br>
+
+```txt
+C++       ███████████░
+C#        ███████████░
+Lua       ██████████░░
+Python    ████████░░░░
+Shaders   ████████████
+Sleep     ██░░░░░░░░░░
+```
+
+---
+
+## `// CURRENT_ROUTE`
+
+```txt
+[ MIDNIGHT HIGHWAY ]
+
+      ┌─────────────── GAME DEV
+──────┤
+      ├─────────────── SHADERS
+──────┤
+      ├─────────────── GRAPHICS
+──────┤
+      ├─────────────── LOW LEVEL
+──────┤
+      └─────────────── UNKNOWN
+```
+
+---
+
+## `// TELEMETRY`
 
 <div align="center">
 
 <img height="170"
-src="https://github-readme-stats.vercel.app/api?username=xM4theus&show_icons=true&hide_border=true&bg_color=07050D&title_color=E8A9C6&icon_color=9C6ADE&text_color=F6F3F8&ring_color=9C6ADE"/>
+src="https://github-readme-stats.vercel.app/api?username=xM4theus&show_icons=true&hide_border=true&bg_color=050408&title_color=E9A8C7&icon_color=A77ADB&text_color=F8F6FA&ring_color=A77ADB"/>
 
 <img height="170"
-src="https://github-readme-stats.vercel.app/api/top-langs/?username=xM4theus&layout=compact&hide_border=true&bg_color=07050D&title_color=E8A9C6&text_color=F6F3F8"/>
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=xM4theus&layout=compact&hide_border=true&bg_color=050408&title_color=E9A8C7&text_color=F8F6FA"/>
 
 </div>
 
@@ -77,61 +99,71 @@ src="https://github-readme-stats.vercel.app/api/top-langs/?username=xM4theus&lay
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=xM4theus&hide_border=true&background=07050D&ring=9C6ADE&fire=E8A9C6&currStreakLabel=E8A9C6&sideLabels=A59CAC&dates=6F6877&currStreakNum=F6F3F8&sideNums=F6F3F8"/>
+<img src="https://streak-stats.demolab.com?user=xM4theus&hide_border=true&background=050408&ring=A77ADB&fire=E9A8C7&currStreakLabel=E9A8C7&sideLabels=A89FAE&dates=726B79&currStreakNum=F8F6FA&sideNums=F8F6FA"/>
 
 </div>
 
 ---
 
-## `// MEMORY_DUMP`
+## `// RADIO`
 
 ```txt
-0x0000  ████████████████████████  VOID
-0x0010  ███████░░░░░░░░░░░░░░░░  SLEEP
-0x0020  █████████████████████░░░  CODE
-0x0030  ████████████████████████  CHAOS
-0x0040  ███████████████░░░░░░░░░  SANITY
+CH. 01 ███████████████░   CODE
+CH. 02 ████████████████   MUSIC
+CH. 03 ███████░░░░░░░░░   REALITY
+CH. 04 ████████████████   NIGHT
+CH. ?? ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒   UNKNOWN
+```
+
+```txt
+[03:41:16] SIGNAL ACQUIRED
+[03:42:08] UNKNOWN TRANSMISSION
+[03:43:51] SIGNAL LOST
+[03:46:32] SIGNAL ACQUIRED
+[03:47:00] don't look behind you
+[03:47:01] SIGNAL LOST
 ```
 
 ---
 
-## `// ERROR_LOG`
+## `// NIGHT_LOG`
 
 ```txt
-[00:00:01] user connected
-[00:00:02] identity loaded: xM4theus
-[00:00:04] normal behavior not found
-[00:00:07] entering midnight environment
-[00:00:13] loading questionable code
-[00:00:21] warning: reality unstable
-[00:00:34] process refuses to terminate
+03:12 — opened project
+03:26 — changed one line
+03:37 — everything broke
+03:44 — fixed everything
+03:45 — don't know why it works
+03:47 — commit
 ```
 
 ---
 
 <div align="center">
 
-### `// SIGNAL`
-
 ```txt
-              ┌──────────────────────────┐
-              │     MIDNIGHT CHANNEL     │
-              │                          │
-              │    signal : unstable     │
-              │    source : unknown      │
-              │    status : watching     │
-              └──────────────────────────┘
+                 ⋆            .
+         .                         ☾
+
+                    xM4theus
+
+              LOST // BUT MOVING
+
+         .                         .
+                  ⋆
 ```
 
-<img src="https://komarev.com/ghpvc/?username=xM4theus&label=GHOSTS%20DETECTED&color=6C4A8E&style=for-the-badge"/>
+<img src="https://komarev.com/ghpvc/?username=xM4theus&label=LOST%20SIGNALS&color=6C4A8E&style=for-the-badge"/>
 
 <br><br>
 
-`#07050D` • `#24152F` • `#9C6ADE` • `#E8A9C6` • `#F6F3F8`
+`MIDNIGHT PURPLE`
+
+`#050408` • `#171020` • `#38234B` • `#A77ADB` • `#E9A8C7` • `#F8F6FA`
 
 <br>
 
-### `nothing dies. it just stops responding.`
+### `drive until the signal disappears.`
 
 </div>
 ```
