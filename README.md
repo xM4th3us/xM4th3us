@@ -1,11 +1,4 @@
 <!--
-  xM4theus profile README
-
-  Default asset combo used here:
-  - ./assets/banner-night.png
-  - ./assets/icon-rage.png
-  - ./assets/icon-extra.jpg
-
   Optional swaps:
   - banner-night.png  -> banner-rage.png
   - icon-rage.png     -> icon-void.png
@@ -13,15 +6,15 @@
 
 <div align="center">
 
-<img src="./assets/banner-night.png" width="100%" alt="xM4theus banner"/>
+<img src="./assets/banner-night.png" width="100%" alt="xM4th3us banner"/>
 
 <br><br>
 
-<img src="./assets/icon-rage.png" width="120" alt="xM4theus icon"/>
+<img src="./assets/icon-rage.png" width="120" alt="xM4th3us icon"/>
 &nbsp;&nbsp;&nbsp;
 <img src="./assets/icon-extra.jpg" width="120" alt="extra icon"/>
 
-# `xM4theus`
+# `xM4th3us`
 
 ### `LOST // BUT MOVING`
 
@@ -42,6 +35,7 @@
 ! [05] breaking things that worked yesterday
 ! [06] fixing things that should not exist
 ! [07] questionable ideas after midnight
+! [08] every midnight, my mind resurrects her — a ghost I was never able to erase
 ```
 
 ---
@@ -55,11 +49,11 @@
 </div>
 
 ```txt
-C++       ███████████░
-C#        ███████████░
+C++       ████░░░░░░░░
+C#        ██████░░░░░░
 Lua       ██████████░░
-Python    ████████░░░░
-Shaders   ████████████
+Python    ██░░░░░░░░░░
+Shaders   ████████░░░░
 Sleep     ██░░░░░░░░░░
 ```
 
@@ -90,7 +84,7 @@ Sleep     ██░░░░░░░░░░
 0x0010  ███████░░░░░░░░░░░░░░░░  SLEEP
 0x0020  █████████████████████░░░  CODE
 0x0030  ████████████████████████  CHAOS
-0x0040  ███████████████░░░░░░░░░  SANITY
+0x0040  ██████████░░░░░░░░░░░░░░  SANITY
 ```
 
 ---
@@ -99,11 +93,14 @@ Sleep     ██░░░░░░░░░░
 
 ```txt
 [00:00:01] user connected
-[00:00:02] identity loaded: xM4theus
+[00:00:02] identity loaded: xM4th3us
 [00:00:04] normal behavior not found
 [00:00:07] entering midnight environment
 [00:00:13] loading questionable code
+[00:00:18] primary loss detected: her
 [00:00:21] warning: reality unstable
+[00:00:27] first important thing lost
+[00:00:31] returned to solitary state
 [00:00:34] process refuses to terminate
 ```
 
@@ -140,10 +137,17 @@ CH. ?? ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒   UNKNOWN
 ```txt
 [03:41:16] SIGNAL ACQUIRED
 [03:42:08] UNKNOWN TRANSMISSION
-[03:43:51] SIGNAL LOST
+[03:42:08] HEART SIGNAL LOST
+[03:43:08] HE APPERS TO BE DEAD
+[03:44:17] SIGNAL LOST
 [03:46:32] SIGNAL ACQUIRED
-[03:47:00] don't look behind you
-[03:47:01] SIGNAL LOST
+[03:47:49] HE CONTINUES TO SEARCH AND TRY TO RECOVER WHAT HE HAS LOST
+[03:47:53] SIGNAL LOST
+[03:48:22] SIGNAL ACQUIRED
+[03:48:27] A GHOST?
+[03:49:25] HE WILL BE DEAD SOON
+[03:49:58] don't look behind you
+[03:50:01] SIGNAL LOST
 ```
 
 ---
@@ -167,15 +171,15 @@ CH. ?? ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒   UNKNOWN
                  ⋆            .
          .                         ☾
 
-                    xM4theus
+                    xM4th3us
 
-              LOST // BUT MOVING
+ LOST // SOMETHING IMPORTANT IS MISSING // BUT MOVING
 
          .                         .
                   ⋆
 ```
 
-<img src="https://komarev.com/ghpvc/?username=xM4theus&label=LOST%20SIGNALS&color=6C4A8E&style=for-the-badge" alt="profile views"/>
+<img src="https://komarev.com/ghpvc/?username=xM4th3us&label=LOST%20SIGNALS&color=6C4A8E&style=for-the-badge" alt="profile views"/>
 
 <br><br>
 
