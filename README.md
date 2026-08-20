@@ -18,7 +18,7 @@
 
 ### `LOST // SOMETHING IMPORTANT IS MISSING // BUT MOVING`
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&pause=1000&color=E9A8C7&center=true&vCenter=true&width=760&lines=%3E+midnight+process+initialized.;%3E+code+%2F%2F+shaders+%2F%2F+low-level.;%3E+breaking+things+until+they+work.;%3E+still+running+through+the+void.;%3E+signal+unstable." alt="typing svg"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&pause=1000&color=E9A8C7&center=true&vCenter=true&width=760&lines=%3E+midnight+process+initialized.;%3E+code+%2F%2F+shaders+%2F%2F+3Dmaker+%2F%2F+animator+%2F%2F+low-level.;%3E+breaking+things+until+they+work.;%3E+still+running+through+the+void.;%3E+signal+unstable." alt="typing svg"/>
 
 </div>
 
