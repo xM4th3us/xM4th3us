@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #111111 0%,
+            #050505 45%,
+            #000000 100%
+        );
+
+    color: #b5b5b5;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    min-height: 100vh;
+}
+
+
+/* README */
+
+#readme {
+    width: min(900px, 90%);
+
+    margin: auto;
+
+    padding:
+        100px 0
+        150px;
+}
+
+
+/* TITULO */
+
+#readme h1 {
+    color: white;
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+/* SEÇÕES */
+
+#readme h2 {
+    color: #777;
+
+    font-size: 18px;
+
+    margin-top: 70px;
+
+    padding-bottom: 10px;
+
+    border-bottom:
+        1px solid #191919;
+}
+
+
+/* TEXTO */
+
+#readme p {
+    line-height: 1.8;
+
+    color: #8b8b8b;
+}
+
+
+/* LINKS */
+
+#readme a {
+    color: #dddddd;
+
+    text-decoration: none;
+}
+
+#readme a:hover {
+    color: white;
+}
+
+
+/* IMAGENS */
+
+#readme img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+
+/* CODE */
+
+#readme pre {
+    background: #070707;
+
+    border: 1px solid #171717;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    overflow-x: auto;
+}
+
+
+/* SOUND BUTTON */
+
+#soundButton {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    padding: 10px 15px;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    color: #777;
+
+    border:
+        1px solid #222;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#soundButton:hover {
+    color: white;
+
+    border-color: #555;
+}
