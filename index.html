@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
+
+    <!-- =========================================
+         BASIC
+    ========================================== -->
+
     <meta charset="UTF-8">
 
     <meta
@@ -9,30 +14,111 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <meta
+        name="theme-color"
+        content="#000000"
+    >
+
+
+    <!-- =========================================
+         TITLE
+    ========================================== -->
+
     <title>xM4th3us</title>
 
-    <link rel="stylesheet" href="style.css">
+
+    <!-- =========================================
+         DESCRIPTION
+    ========================================== -->
+
+    <meta
+        name="description"
+        content="xM4th3us // personal profile"
+    >
+
+
+    <!-- =========================================
+         CSS
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+
 </head>
+
 
 <body>
 
+
+    <!-- =========================================
+         README
+    ========================================== -->
+
     <main id="readme">
-        <p>Loading...</p>
+
+        <p class="loading">
+            loading...
+        </p>
+
     </main>
 
-    <audio id="backgroundMusic" loop>
-        <source src="./assets/background/everynight.mp3" type="audio/mpeg">
+
+
+    <!-- =========================================
+         BACKGROUND MUSIC
+    ========================================== -->
+
+    <audio
+        id="backgroundMusic"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="./assets/background/everynight.mp3"
+            type="audio/mpeg"
+        >
+
+        Your browser does not support audio.
+
     </audio>
 
-    <button id="soundButton">
+
+
+    <!-- =========================================
+         SOUND BUTTON
+    ========================================== -->
+
+    <button
+        id="soundButton"
+        type="button"
+        aria-label="Toggle background music"
+    >
         SOUND OFF
     </button>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
-    </script>
 
-    <script src="script.js"></script>
+
+    <!-- =========================================
+         MARKDOWN PARSER
+    ========================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+    ></script>
+
+
+
+    <!-- =========================================
+         SITE SCRIPT
+    ========================================== -->
+
+    <script
+        src="./script.js"
+    ></script>
+
 
 </body>
 
