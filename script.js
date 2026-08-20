@@ -32,21 +32,31 @@ loadReadme();
 const music = document.getElementById("backgroundMusic");
 const soundButton = document.getElementById("soundButton");
 
-music.volume = 0.2;
+music.volume = 0.20;
 
-soundButton.addEventListener("click", () => {
+soundButton.addEventListener("click", async () => {
 
-    if (music.paused) {
+    try {
 
-        music.play();
+        if (music.paused) {
 
-        soundButton.textContent = "SOUND ON";
+            await music.play();
 
-    } else {
+            soundButton.textContent = "SOUND ON";
 
-        music.pause();
+        } else {
 
-        soundButton.textContent = "SOUND OFF";
+            music.pause();
+
+            soundButton.textContent = "SOUND OFF";
+
+        }
+
+    } catch (error) {
+
+        console.error("Erro ao tocar música:", error);
+
+        soundButton.textContent = "AUDIO ERROR";
 
     }
 
