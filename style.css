@@ -1,147 +1,758 @@
+/* =========================================================
+   RESET
+========================================================= */
+
 * {
     box-sizing: border-box;
 }
 
 html {
+    margin: 0;
+    padding: 0;
+
     scroll-behavior: smooth;
+
+    background: #020202;
 }
 
 body {
     margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
 
     background:
         radial-gradient(
-            circle at top,
-            #111111 0%,
-            #050505 45%,
-            #000000 100%
-        );
+            circle at 50% -15%,
+            rgba(255, 255, 255, 0.035),
+            transparent 38%
+        ),
+        #020202;
 
-    color: #b5b5b5;
+    color: #c5c5c5;
 
     font-family:
         Consolas,
         "Courier New",
         monospace;
 
-    min-height: 100vh;
+    font-size: 13px;
+
+    overflow-x: hidden;
 }
 
 
-/* README */
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+    background: #d0d0d0;
+    color: #000000;
+}
+
+
+/* =========================================================
+   MAIN README CONTAINER
+========================================================= */
 
 #readme {
-    width: min(900px, 90%);
+    width: min(940px, calc(100% - 40px));
 
-    margin: auto;
+    margin: 0 auto;
 
     padding:
-        100px 0
-        150px;
+        40px 0
+        120px;
+
+    position: relative;
 }
 
 
-/* TITULO */
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loading {
+    width: 100%;
+
+    margin-top: 150px;
+
+    text-align: center;
+
+    color: #555555;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+#readme h1,
+#readme h2,
+#readme h3,
+#readme h4,
+#readme h5,
+#readme h6 {
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-weight: 600;
+
+    color: #929292;
+}
+
+
+/* =========================================================
+   H1
+========================================================= */
 
 #readme h1 {
-    color: white;
+    margin:
+        25px 0
+        30px;
 
-    font-size: 50px;
+    text-align: center;
 
-    margin-bottom: 15px;
+    color: #e0e0e0;
+
+    font-size: 28px;
+
+    letter-spacing: 0.5px;
 }
 
 
-/* SEÇÕES */
+/* =========================================================
+   SECTION TITLES
+========================================================= */
 
 #readme h2 {
-    color: #777;
-
-    font-size: 18px;
-
-    margin-top: 70px;
+    margin:
+        70px 0
+        15px;
 
     padding-bottom: 10px;
 
     border-bottom:
-        1px solid #191919;
+        1px solid #161616;
+
+    color: #858585;
+
+    font-size: 16px;
+
+    line-height: 1.3;
 }
 
 
-/* TEXTO */
+#readme h3 {
+    margin:
+        45px 0
+        15px;
+
+    color: #858585;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+========================================================= */
 
 #readme p {
-    line-height: 1.8;
+    margin:
+        14px 0;
 
-    color: #8b8b8b;
+    color: #a0a0a0;
+
+    line-height: 1.75;
 }
 
 
-/* LINKS */
+/* =========================================================
+   CENTER TAGS FROM README
+========================================================= */
+
+#readme div[align="center"],
+#readme p[align="center"] {
+    text-align: center;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
 
 #readme a {
-    color: #dddddd;
+    color: #bcbcbc;
 
     text-decoration: none;
+
+    border-bottom:
+        1px solid #3a3a3a;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
+
 
 #readme a:hover {
-    color: white;
+    color: #ffffff;
+
+    border-color: #ffffff;
 }
 
 
-/* IMAGENS */
+/* =========================================================
+   IMAGES
+========================================================= */
 
 #readme img {
     max-width: 100%;
 
     height: auto;
+
+    object-fit: contain;
 }
 
 
-/* CODE */
+/* Banner principal */
+
+#readme > p img,
+#readme > div img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   HORIZONTAL RULE
+========================================================= */
+
+#readme hr {
+    margin:
+        14px 0
+        55px;
+
+    padding: 0;
+
+    height: 1px;
+
+    border: 0;
+
+    background: #d0d0d0;
+
+    opacity: 0.85;
+}
+
+
+/* =========================================================
+   CODE INLINE
+========================================================= */
+
+#readme :not(pre) > code {
+    padding:
+        2px 5px;
+
+    border:
+        1px solid #1c1c1c;
+
+    border-radius: 4px;
+
+    background: #080808;
+
+    color: #c1c1c1;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+}
+
+
+/* =========================================================
+   CODE BLOCKS
+========================================================= */
 
 #readme pre {
-    background: #070707;
+    width: 100%;
 
-    border: 1px solid #171717;
+    margin:
+        14px 0;
+
+    padding:
+        20px;
+
+    overflow-x: auto;
+
+    border:
+        1px solid #1c1c1c;
 
     border-radius: 8px;
 
-    padding: 20px;
+    background:
+        rgba(4, 4, 4, 0.92);
+
+    color: #d0d0d0;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+
+    white-space: pre;
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.01);
+}
+
+
+#readme pre code {
+    display: block;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: inherit;
+
+    font-family: inherit;
+
+    font-size: inherit;
+
+    line-height: inherit;
+
+    white-space: pre;
+}
+
+
+/* =========================================================
+   SIGNAL
+
+   O JavaScript adiciona:
+   class="signal-code"
+========================================================= */
+
+#readme pre.signal-code {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 135px;
+
+    padding:
+        25px 20px;
+
+    text-align: left;
 
     overflow-x: auto;
 }
 
 
-/* SOUND BUTTON */
+#readme pre.signal-code code {
+    display: block;
+
+    width: max-content;
+    max-width: 100%;
+
+    margin:
+        0 auto;
+
+    padding: 0;
+
+    text-align: left;
+
+    white-space: pre;
+}
+
+
+/* =========================================================
+   SKY / LOST / xM4th3us
+
+   O JavaScript adiciona:
+   class="sky-code"
+========================================================= */
+
+#readme pre.sky-code {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 180px;
+
+    padding:
+        24px 20px;
+
+    overflow-x: auto;
+
+    text-align: center;
+}
+
+
+#readme pre.sky-code code {
+    display: block;
+
+    width: max-content;
+    max-width: 100%;
+
+    margin:
+        0 auto;
+
+    padding: 0;
+
+    text-align: center;
+
+    white-space: pre;
+
+    line-height: 2;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+#readme ul,
+#readme ol {
+    margin:
+        15px 0;
+
+    padding-left: 25px;
+}
+
+
+#readme li {
+    margin:
+        6px 0;
+
+    color: #a0a0a0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   BLOCKQUOTE
+========================================================= */
+
+#readme blockquote {
+    margin:
+        20px 0;
+
+    padding:
+        12px 18px;
+
+    border-left:
+        2px solid #454545;
+
+    background:
+        rgba(255, 255, 255, 0.012);
+
+    color: #777777;
+}
+
+
+#readme blockquote p {
+    margin: 0;
+
+    color: inherit;
+}
+
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+#readme table {
+    width: 100%;
+
+    margin:
+        20px 0;
+
+    border-collapse: collapse;
+
+    overflow-x: auto;
+}
+
+
+#readme th,
+#readme td {
+    padding:
+        10px 12px;
+
+    border:
+        1px solid #1b1b1b;
+
+    text-align: left;
+}
+
+
+#readme th {
+    color: #cccccc;
+
+    background: #080808;
+}
+
+
+#readme td {
+    color: #8f8f8f;
+}
+
+
+/* =========================================================
+   STRONG / EMPHASIS
+========================================================= */
+
+#readme strong {
+    color: #d0d0d0;
+
+    font-weight: 600;
+}
+
+
+#readme em {
+    color: #999999;
+}
+
+
+/* =========================================================
+   SOUND BUTTON
+========================================================= */
 
 #soundButton {
     position: fixed;
 
-    right: 25px;
-    bottom: 25px;
+    right: 24px;
+    bottom: 22px;
 
-    padding: 10px 15px;
+    z-index: 9999;
 
-    background: rgba(0, 0, 0, 0.7);
+    min-width: 76px;
 
-    color: #777;
+    padding:
+        10px 13px;
 
     border:
-        1px solid #222;
+        1px solid #202020;
 
-    font-family: inherit;
+    border-radius: 0;
 
-    font-size: 11px;
+    background:
+        rgba(2, 2, 2, 0.88);
+
+    color: #686868;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 0.3px;
 
     cursor: pointer;
 
-    transition: 0.2s;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
-#soundButton:hover {
-    color: white;
 
-    border-color: #555;
+#soundButton:hover {
+    color: #d5d5d5;
+
+    border-color: #464646;
+
+    background:
+        rgba(8, 8, 8, 0.96);
+}
+
+
+#soundButton:active {
+    transform:
+        translateY(1px);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #030303;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+
+    border:
+        2px solid #030303;
+
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #656565;
+}
+
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color:
+        #4a4a4a
+        #030303;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    #readme {
+        width:
+            calc(100% - 32px);
+
+        padding-top: 25px;
+    }
+
+
+    #readme h2 {
+        margin-top: 55px;
+    }
+
+
+    #readme pre {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 12px;
+    }
+
+
+    #readme {
+        width:
+            calc(100% - 20px);
+
+        padding:
+            15px 0
+            90px;
+    }
+
+
+    #readme h1 {
+        font-size: 22px;
+    }
+
+
+    #readme h2 {
+        margin-top: 45px;
+
+        font-size: 14px;
+    }
+
+
+    #readme pre {
+        padding: 14px;
+
+        border-radius: 6px;
+
+        font-size: 10px;
+    }
+
+
+    #readme pre.signal-code {
+        min-height: 110px;
+
+        padding:
+            18px 10px;
+    }
+
+
+    #readme pre.sky-code {
+        min-height: 150px;
+
+        padding:
+            18px 10px;
+    }
+
+
+    #soundButton {
+        right: 12px;
+        bottom: 12px;
+
+        padding:
+            8px 10px;
+
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+
+   Não quebra ASCII:
+   permite scroll horizontal dentro do bloco.
+========================================================= */
+
+@media (max-width: 400px) {
+
+    #readme pre.signal-code,
+    #readme pre.sky-code {
+        justify-content: flex-start;
+    }
+
+
+    #readme pre.signal-code code,
+    #readme pre.sky-code code {
+        margin:
+            0 auto;
+    }
+
 }

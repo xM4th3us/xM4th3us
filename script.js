@@ -1,8 +1,16 @@
 // ======================================================
-// README
+// ELEMENTOS
 // ======================================================
 
 const readme = document.getElementById("readme");
+const music = document.getElementById("backgroundMusic");
+const soundButton = document.getElementById("soundButton");
+
+const DEFAULT_VOLUME = 0.05; // 12%
+
+// ======================================================
+// CARREGAR README
+// ======================================================
 
 async function loadReadme() {
     try {
@@ -18,8 +26,7 @@ async function loadReadme() {
 
         readme.innerHTML = marked.parse(markdown);
 
-        // Corrige o alinhamento da seção SIGNAL
-        fixSignal();
+        prepareSpecialBlocks();
 
     } catch (error) {
         console.error("Erro ao carregar README:", error);
@@ -34,124 +41,78 @@ loadReadme();
 
 
 // ======================================================
-// SIGNAL - CENTRALIZA O ASCII
+// REMOVER ESPAÇOS EXTRAS NO INÍCIO DOS BLOCOS ASCII
 // ======================================================
 
-function fixSignal() {
+function trimSharedIndent(text) {
+    let lines = text.replace(/\t/g, "    ").split("\n");
 
-    const headings = [
-        ...document.querySelectorAll(
-            "#readme h1, #readme h2, #readme h3"
-        )
-    ];
+    while (lines.length && !lines[0].trim()) {
+        lines.shift();
+    }
 
-    const signalHeading = headings.find(
-        heading =>
-            heading.textContent
-                .toUpperCase()
-                .includes("SIGNAL")
+    while (lines.length && !lines[lines.length - 1].trim()) {
+        lines.pop();
+    }
+
+    const nonEmptyLines = lines.filter(line => line.trim().length > 0);
+
+    if (!nonEmptyLines.length) {
+        return lines.join("\n");
+    }
+
+    const minimumIndent = Math.min(
+        ...nonEmptyLines.map(line => {
+            const match = line.match(/^ */);
+            return match ? match[0].length : 0;
+        })
     );
 
-    if (!signalHeading) {
-        return;
-    }
-
-    let element = signalHeading.nextElementSibling;
-
-    while (element) {
-
-        // Para ao encontrar a próxima seção
-        if (
-            element.tagName === "H1" ||
-            element.tagName === "H2" ||
-            element.tagName === "H3"
-        ) {
-            break;
-        }
-
-        if (element.tagName === "PRE") {
-
-            const code = element.querySelector("code");
-
-            if (!code) {
-                break;
-            }
-
-            const lines = code.textContent
-                .replace(/\n$/, "")
-                .split("\n");
-
-            const validLines = lines.filter(
-                line => line.trim().length > 0
-            );
-
-            if (validLines.length > 0) {
-
-                const minimumIndent = Math.min(
-                    ...validLines.map(line => {
-
-                        const match = line.match(/^\s*/);
-
-                        return match
-                            ? match[0].length
-                            : 0;
-                    })
-                );
-
-                code.textContent = lines
-                    .map(line =>
-                        line.slice(minimumIndent)
-                    )
-                    .join("\n");
-            }
-
-            element.classList.add("signal-code");
-
-            break;
-        }
-
-        element = element.nextElementSibling;
-    }
+    return lines
+        .map(line => line.slice(Math.min(minimumIndent, line.length)))
+        .join("\n");
 }
 
 
 // ======================================================
-// BACKGROUND MUSIC
+// DETECTAR E CENTRALIZAR BLOCOS ESPECIAIS
 // ======================================================
 
-const music =
-    document.getElementById("backgroundMusic");
+function prepareSpecialBlocks() {
+    const preBlocks = document.querySelectorAll("#readme pre");
 
-const soundButton =
-    document.getElementById("soundButton");
+    preBlocks.forEach(pre => {
+        const code = pre.querySelector("code");
+        if (!code) return;
 
+        const cleaned = trimSharedIndent(code.textContent);
+        code.textContent = cleaned;
 
-// Volume padrão:
-//
-// 0.05 = 5%
-// 0.10 = 10%
-// 0.15 = 15%
-// 0.20 = 20%
-// 0.50 = 50%
-// 1.00 = 100%
+        const text = cleaned.toUpperCase();
 
-const DEFAULT_VOLUME = 0.03;
+        // SIGNAL
+        if (text.includes("MIDNIGHT CHANNEL")) {
+            pre.classList.add("signal-code");
+        }
 
-
-// Configuração inicial
-music.volume = DEFAULT_VOLUME;
-music.muted = false;
+        // BLOCO DO CÉU / ESTRELAS / LUA / LOST
+        if (
+            text.includes("LOST //") ||
+            text.includes("BUT MOVING") ||
+            text.includes("XM4TH3US")
+        ) {
+            pre.classList.add("sky-code");
+        }
+    });
+}
 
 
 // ======================================================
-// ATUALIZA TEXTO DO BOTÃO
+// BOTÃO DE SOM
 // ======================================================
 
 function updateSoundButton() {
-
-    if (!soundButton) {
-        return;
-    }
+    if (!soundButton || !music) return;
 
     if (music.paused) {
         soundButton.textContent = "SOUND OFF";
@@ -166,102 +127,54 @@ function updateSoundButton() {
 // ======================================================
 
 async function playMusic() {
+    if (!music) return false;
 
     try {
-
-        // Garante que nunca comece em 100%
         music.volume = DEFAULT_VOLUME;
-
         music.muted = false;
 
         await music.play();
 
         updateSoundButton();
-
         return true;
 
     } catch (error) {
-
-        console.log(
-            "Autoplay bloqueado. Aguardando interação do usuário."
-        );
-
+        console.log("Autoplay bloqueado pelo navegador.");
         updateSoundButton();
-
         return false;
     }
 }
 
 
 // ======================================================
-// PARAR MÚSICA
+// PAUSAR MÚSICA
 // ======================================================
 
 function pauseMusic() {
+    if (!music) return;
 
     music.pause();
-
     updateSoundButton();
 }
 
 
 // ======================================================
-// BOTÃO SOUND ON / OFF
+// TENTAR AUTOPLAY AO ENTRAR
 // ======================================================
 
-if (soundButton) {
+window.addEventListener("load", async () => {
+    if (!music) return;
 
-    soundButton.addEventListener(
-        "click",
-        async event => {
-
-            // Evita que o clique também seja interpretado
-            // pelo listener global da página
-            event.stopPropagation();
-
-            if (music.paused) {
-
-                await playMusic();
-
-            } else {
-
-                pauseMusic();
-            }
-        }
-    );
-}
+    music.volume = DEFAULT_VOLUME;
+    await playMusic();
+});
 
 
 // ======================================================
-// TENTA AUTOPLAY ASSIM QUE O SITE ABRIR
+// SE AUTOPLAY FALHAR, PRIMEIRA INTERAÇÃO INICIA
 // ======================================================
 
-window.addEventListener(
-    "load",
-    async () => {
-
-        music.volume = DEFAULT_VOLUME;
-
-        const started =
-            await playMusic();
-
-        // Se autoplay foi bloqueado,
-        // deixa o botão mostrando SOUND OFF.
-        if (!started) {
-            updateSoundButton();
-        }
-    }
-);
-
-
-// ======================================================
-// PRIMEIRO CLIQUE EM QUALQUER LUGAR INICIA A MÚSICA
-// ======================================================
-
-async function startMusicOnInteraction(event) {
-
-    // Se clicou no próprio botão de áudio,
-    // o botão cuida da música.
+async function startMusicOnFirstInteraction(event) {
     if (
         soundButton &&
         event.target.closest("#soundButton")
@@ -269,72 +182,57 @@ async function startMusicOnInteraction(event) {
         return;
     }
 
-    if (music.paused) {
-
+    if (music && music.paused) {
         await playMusic();
     }
 
-    removeInteractionListeners();
+    removeFirstInteractionListeners();
 }
 
-
-// Também funciona caso a primeira interação
-// seja pelo teclado.
-
-async function startMusicOnKeyboard() {
-
-    if (music.paused) {
-
+async function startMusicOnFirstKey() {
+    if (music && music.paused) {
         await playMusic();
     }
 
-    removeInteractionListeners();
+    removeFirstInteractionListeners();
 }
 
-
-function removeInteractionListeners() {
-
-    document.removeEventListener(
-        "pointerdown",
-        startMusicOnInteraction
-    );
-
-    document.removeEventListener(
-        "keydown",
-        startMusicOnKeyboard
-    );
+function removeFirstInteractionListeners() {
+    document.removeEventListener("pointerdown", startMusicOnFirstInteraction);
+    document.removeEventListener("keydown", startMusicOnFirstKey);
 }
 
-
-document.addEventListener(
-    "pointerdown",
-    startMusicOnInteraction
-);
-
-document.addEventListener(
-    "keydown",
-    startMusicOnKeyboard
-);
+document.addEventListener("pointerdown", startMusicOnFirstInteraction);
+document.addEventListener("keydown", startMusicOnFirstKey);
 
 
 // ======================================================
-// MANTÉM BOTÃO SINCRONIZADO
+// CLIQUE NO BOTÃO SOUND
 // ======================================================
 
-music.addEventListener(
-    "play",
-    updateSoundButton
-);
+if (soundButton) {
+    soundButton.addEventListener("click", async (event) => {
+        event.stopPropagation();
 
-music.addEventListener(
-    "pause",
-    updateSoundButton
-);
+        if (!music) return;
 
-music.addEventListener(
-    "ended",
-    updateSoundButton
-);
+        if (music.paused) {
+            await playMusic();
+        } else {
+            pauseMusic();
+        }
+    });
+}
 
+
+// ======================================================
+// MANTER BOTÃO SINCRONIZADO
+// ======================================================
+
+if (music) {
+    music.addEventListener("play", updateSoundButton);
+    music.addEventListener("pause", updateSoundButton);
+    music.addEventListener("ended", updateSoundButton);
+}
 
 updateSoundButton();
