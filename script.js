@@ -135,7 +135,7 @@ const soundButton =
 // 0.50 = 50%
 // 1.00 = 100%
 
-const DEFAULT_VOLUME = 0.20;
+const DEFAULT_VOLUME = 0.05;
 
 
 // Configuração inicial
