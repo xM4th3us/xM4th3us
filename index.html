@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>xM4th3us</title>
 
@@ -12,24 +17,23 @@
 <body>
 
     <main id="readme">
-        <div class="loading">
-            loading...
-        </div>
+        <p>Loading...</p>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <audio id="backgroundMusic" loop>
+        <source src="background/background.mp3" type="audio/mpeg">
+    </audio>
 
-    <script>
-        async function loadReadme() {
-            const response = await fetch("./README.md");
-            const markdown = await response.text();
+    <button id="soundButton">
+        SOUND OFF
+    </button>
 
-            document.getElementById("readme").innerHTML =
-                marked.parse(markdown);
-        }
-
-        loadReadme();
+    <script
+        src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
     </script>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>
