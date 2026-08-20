@@ -170,15 +170,13 @@ CH. ?? ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒   UNKNOWN
 <div align="center">
 
 ```txt
-            ⋆            .
-      .                        ☾
+*        ☾        *
 
-                  xM4th3us
+xM4th3us
 
- LOST // SOMETHING IMPORTANT IS MISSING // BUT MOVING
+LOST // SOMETHING IMPORTANT IS MISSING // BUT MOVING
 
-      .                        .
-            ⋆
+*                 *
 ```
 
 <img src="https://komarev.com/ghpvc/?username=xM4th3us&label=LOST%20SIGNALS&color=6C4A8E&style=for-the-badge" alt="profile views"/>
