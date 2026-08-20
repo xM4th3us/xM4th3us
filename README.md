@@ -170,7 +170,7 @@ CH. ?? ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒   UNKNOWN
 <div align="center">
 
 ```txt
-*        ☾        
+*        ☾        *
 
 xM4th3us
 
