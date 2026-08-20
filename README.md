@@ -179,7 +179,7 @@ xM4th3us
 LOST // SOMETHING IMPORTANT IS MISSING // BUT MOVING
 
 *                 *
-  *
+ *
  *         *
 ```
 
