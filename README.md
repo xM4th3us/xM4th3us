@@ -6,13 +6,13 @@
 
 <div align="center">
 
-<img src="./assets/banner-night.png" width="100%" alt="xM4th3us banner"/>
+<img src="./assets/imagens/banner-night.png" width="100%" alt="xM4th3us banner"/>
 
 <br><br>
 
-<img src="./assets/icon-rage.png" width="120" alt="xM4th3us icon"/>
+<img src="./assets/imagens/icon-rage.png" width="120" alt="xM4th3us icon"/>
 &nbsp;&nbsp;&nbsp;
-<img src="./assets/icon-extra.jpg" width="120" alt="extra icon"/>
+<img src="./assets/imagens/icon-extra.jpg" width="120" alt="extra icon"/>
 
 # `xM4th3us`
 
