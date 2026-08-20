@@ -1,158 +1,137 @@
 ````md
-<!--a
-  PROFILE README for github.com/xM4theus
-
-  Before using:
-  1) Create a public repository named: xM4theus
-  2) Put this file in: xM4theus/README.md
-  3) Add your images here:
-     - ./assets/banner.gif   (or .png / .jpg)
-     - ./assets/icon.png
--->
-
 <div align="center">
-  <img src="./assets/banner.gif" alt="xM4theus banner" width="100%" />
-</div>
 
-<br>
+<img src="./assets/banner-rage.png" width="100%" alt="VOID RAGE"/>
 
-<div align="center">
-  <img src="./assets/icon.png" alt="xM4theus icon" width="120" />
-</div>
+<br><br>
 
-<div align="center">
+<img src="./assets/icon-rage.png" width="125" alt="xM4theus"/>
+&nbsp;&nbsp;&nbsp;
+<img src="./assets/icon-extra.jpg" width="125" alt="void"/>
 
 # `xM4theus`
 
-### `ghost in the machine`
+### `// GHOST PROCESS DETECTED`
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&pause=1200&color=E9A8C7&center=true&vCenter=true&width=650&lines=%3E+welcome+to+the+midnight+void.;%3E+breaking+things+until+they+work.;%3E+code+%2F+shaders+%2F+low-level+stuff.;%3E+clean+commits%2C+questionable+sleep+schedule." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&pause=900&color=E8A9C6&center=true&vCenter=true&width=700&lines=%5B+SYSTEM+CORRUPTED+%5D;%3E+ghost+process+detected...;%3E+breaking+reality+one+commit+at+a+time.;%3E+there+is+something+inside+the+machine.;%3E+DO+NOT+TERMINATE." />
 
 </div>
 
 ---
 
-## `// whoami`
+## `// IDENTITY.EXE`
 
 ```txt
-┌──(xM4theus@midnight-void)-[~/profile]
-└─$ whoami
-
-name        : Matheus
-alias       : xM4theus
-status      : online, probably
-vibe        : midnight purple / black / white / pastel pink
-focus       : game dev / shaders / code / obscure experiments
-currently   : creating problems to solve later
-motto       : if it breaks, now it's interesting
+┌─[ xM4theus@VOID ]
+│
+├─ alias        :: xM4theus
+├─ state        :: ONLINE // UNSTABLE
+├─ environment  :: midnight void
+├─ objective    :: CREATE / BREAK / REBUILD
+├─ interests    :: shaders / game dev / low-level / weird code
+├─ aesthetic    :: black // purple // white // pastel pink
+│
+└─ process      :: still running...
 ````
 
 ---
 
-## `// arsenal`
-
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,cs,lua,python,unity,git,github,vscode,visualstudio&theme=dark" />
+
+### `▓▓▓ SYSTEM LOADOUT ▓▓▓`
+
+<img src="https://skillicons.dev/icons?i=cpp,cs,lua,python,unity,git,github,vscode,visualstudio&theme=dark"/>
+
 </div>
 
 ---
 
-## `// activity`
+## `// ACTIVE_PROCESSES`
+
+```diff
++ [01] shader experiments
++ [02] game development
++ [03] low-level curiosity
++ [04] obscure projects
+
+! [05] breaking things that worked yesterday
+! [06] fixing things that should not exist
+! [07] questionable ideas after midnight
+```
+
+---
+
+## `// SYSTEM_ACTIVITY`
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=xM4theus&show_icons=true&hide_border=true&bg_color=07050D&title_color=E9A8C7&icon_color=9F7AEA&text_color=F5F3F7&ring_color=9F7AEA" alt="GitHub stats" />
+<img height="170"
+src="https://github-readme-stats.vercel.app/api?username=xM4theus&show_icons=true&hide_border=true&bg_color=07050D&title_color=E8A9C6&icon_color=9C6ADE&text_color=F6F3F8&ring_color=9C6ADE"/>
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xM4theus&layout=compact&hide_border=true&bg_color=07050D&title_color=E9A8C7&text_color=F5F3F7" alt="Top languages" />
+<img height="170"
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=xM4theus&layout=compact&hide_border=true&bg_color=07050D&title_color=E8A9C6&text_color=F6F3F8"/>
 
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=xM4theus&hide_border=true&background=07050D&ring=9F7AEA&fire=E9A8C7&currStreakLabel=E9A8C7&sideLabels=B9B3C4&dates=8C8793&currStreakNum=F5F3F7&sideNums=F5F3F7" alt="GitHub streak" />
-</div>
 
----
-
-## `// current_ops`
-
-```txt
-[01] messing with shaders
-[02] building weird ideas
-[03] turning caffeine into code
-[04] learning by breaking everything
-[05] making dark things look darker
-```
-
----
-
-## `// stack.log`
-
-```txt
-languages   :: C++ / C# / Lua / Python
-engine      :: Unity
-editor      :: VS Code / Visual Studio
-interests   :: graphics / systems / game tools / experimental stuff
-mood        :: low light, late nights, silent tabs, purple glow
-```
-
----
-
-## `// transmission`
-
-<div align="center">
-
-```txt
-             .        ☾        .
-        .                             .
-                midnight signal
-       .                               .
-             ghosts drift through code
-        .                             .
-             nothing here is permanent
-```
+<img src="https://streak-stats.demolab.com?user=xM4theus&hide_border=true&background=07050D&ring=9C6ADE&fire=E8A9C6&currStreakLabel=E8A9C6&sideLabels=A59CAC&dates=6F6877&currStreakNum=F6F3F8&sideNums=F6F3F8"/>
 
 </div>
 
 ---
 
-## `// contact`
-
-<div align="center">
-
-<a href="https://github.com/xM4theus">
-  <img src="https://img.shields.io/badge/GitHub-xM4theus-07050D?style=for-the-badge&logo=github&logoColor=F5F3F7&labelColor=2E1A47" alt="GitHub badge" />
-</a>
-
-<img src="https://komarev.com/ghpvc/?username=xM4theus&label=lost%20souls&color=9F7AEA&style=for-the-badge" alt="Profile views" />
-
-</div>
-
----
-
-<details>
-  <summary><strong>// extra</strong></summary>
-
-  <br>
+## `// MEMORY_DUMP`
 
 ```txt
-aesthetic references:
-- monochrome chaos
-- eerie icons
-- low exposure cats
-- night drive energy
-- skeletal silhouettes
-- distorted calm
+0x0000  ████████████████████████  VOID
+0x0010  ███████░░░░░░░░░░░░░░░░  SLEEP
+0x0020  █████████████████████░░░  CODE
+0x0030  ████████████████████████  CHAOS
+0x0040  ███████████████░░░░░░░░░  SANITY
 ```
 
-</details>
+---
+
+## `// ERROR_LOG`
+
+```txt
+[00:00:01] user connected
+[00:00:02] identity loaded: xM4theus
+[00:00:04] normal behavior not found
+[00:00:07] entering midnight environment
+[00:00:13] loading questionable code
+[00:00:21] warning: reality unstable
+[00:00:34] process refuses to terminate
+```
 
 ---
 
 <div align="center">
 
-`midnight purple | black | white | pastel pink`
+### `// SIGNAL`
+
+```txt
+              ┌──────────────────────────┐
+              │     MIDNIGHT CHANNEL     │
+              │                          │
+              │    signal : unstable     │
+              │    source : unknown      │
+              │    status : watching     │
+              └──────────────────────────┘
+```
+
+<img src="https://komarev.com/ghpvc/?username=xM4theus&label=GHOSTS%20DETECTED&color=6C4A8E&style=for-the-badge"/>
+
+<br><br>
+
+`#07050D` • `#24152F` • `#9C6ADE` • `#E8A9C6` • `#F6F3F8`
+
+<br>
+
+### `nothing dies. it just stops responding.`
 
 </div>
 ```
