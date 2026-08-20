@@ -10,7 +10,7 @@
 
 <br><br>
 
-<img src="./assets/imagens/rage-icon.png" width="120" alt="xM4th3us icon"/>
+<img src="./assets/imagens/icon-rage.png" width="120" alt="xM4th3us icon"/>
 &nbsp;&nbsp;&nbsp;
 <img src="./assets/imagens/icon-extra.jpg" width="120" alt="extra icon"/>
 
